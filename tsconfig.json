@@ -105,7 +105,8 @@
     "lib": ["esnext"],
     "emitDecoratorMetadata": true,
     "target": "esnext",
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
   },
   "extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
   "exclude": ["node_modules"],

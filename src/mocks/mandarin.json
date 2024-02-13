@@ -1,0 +1,28 @@
+{
+    "name": "Mandarin Restaurant",
+    "location": {
+        "coordinates": [
+            -75.89260179729689,
+            45.31454754650267
+        ]
+    },
+    "foodItems": [
+        {
+            "name": "Tuna Sandwich",
+            "protein": 30,
+            "carbohydrate": 30,
+            "fat": 10,
+            "calories": 2000,
+            "price": 17,
+            "macros": [
+                {
+                    "name": "Chicken",
+                    "subCategory": "Thighs",
+                    "quantity": {
+                        "unit": "gram"
+                    }
+                }
+            ]
+        }
+    ]
+}

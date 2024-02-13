@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
 let server: any;
 mongoose
   .connect(config.mongo_url, {
-    dbName: 'travel',
+    dbName: 'eat-fit',
   })
   .then(() => {
     logger.info('Connected to MongoDB');

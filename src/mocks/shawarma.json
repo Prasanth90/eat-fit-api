@@ -1,0 +1,45 @@
+{
+    "name": "Shawarma Kingdom",
+    "location": {
+        "coordinates": [
+            -75.78230926633172,
+            45.26951754394323
+        ]
+    },
+    "foodItems": [
+        {
+            "name": "Beaf Salad",
+            "protein": 60,
+            "carbohydrate": 60,
+            "fat": 20,
+            "calories": 1200,
+            "price": 20,
+            "macros": [
+                {
+                    "name": "Chicken",
+                    "subCategory": "Thighs",
+                    "quantity": {
+                        "unit": "gram"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Pork Sandwich",
+            "protein": 30,
+            "carbohydrate": 30,
+            "fat": 10,
+            "calories": 1500,
+            "price": 13.99,
+            "macros": [
+                {
+                    "name": "Chicken",
+                    "subCategory": "Thighs",
+                    "quantity": {
+                        "unit": "gram"
+                    }
+                }
+            ]
+        }
+    ]
+}

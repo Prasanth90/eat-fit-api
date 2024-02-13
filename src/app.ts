@@ -5,15 +5,17 @@ import compression from 'compression';
 
 import compressFilter from './utils/compressFilter.util';
 import config from './config/config';
-import buildTripRoutes from './routes/trips';
 
-import { auth, claimIncludes } from 'express-oauth2-jwt-bearer';
+import { auth } from 'express-oauth2-jwt-bearer';
+import buildRestaurantRoutes from './routes/restaurants';
 
 const jwtCheck = auth({
   audience: config.audience,
   issuerBaseURL: config.issuer_base_url,
   tokenSigningAlg: 'RS256',
 });
+
+console.log(jwtCheck);
 
 const app: Express = express();
 
@@ -35,6 +37,6 @@ app.get('/', (_req: Request, res: Response) => {
   res.send('Hello World!');
 });
 
-buildTripRoutes(app, jwtCheck, claimIncludes);
+buildRestaurantRoutes(app);
 
 export default app;

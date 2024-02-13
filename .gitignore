@@ -5,3 +5,5 @@ yarn.lock
 yarn-error.log
 logs/
 coverage/
+.DS_Store
+src/.DS_Store
